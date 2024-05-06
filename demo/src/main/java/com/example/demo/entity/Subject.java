@@ -9,18 +9,24 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.sql.Blob;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "trans_classroom")
-public class Classroom {
+@Table(name = "trans_subject")
+public class Subject {
 
     @Id
+    private Integer idSubject;
     private Integer idClassroom;
+    @Column(name = "´number´")
+    private int number;
+    private String title;
+    private String description;
 
-    @Column(nullable = false)
-    private String classroomName;
+
 
 }

@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.entity.Classroom;
 import com.example.demo.service.ClassroomService;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -18,6 +19,8 @@ import java.util.List;
 @RequestMapping("api/classrooms")
 public class ClassroomController {
 
+
+    @Autowired
     private ClassroomService classroomService;
 
     @GetMapping("/allClasses")

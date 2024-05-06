@@ -42,16 +42,20 @@ public class UserController {
     // Método para obtener un usuario por email y contraseña
     @PostMapping("/login") // Cambié la anotación a PostMapping porque estás enviando la información en el cuerpo de la solicitud
     public ResponseEntity<User> getUserByEmailAndPassword(@RequestBody User userRequest){ // Aquí recibimos el objeto User en el cuerpo de la solicitud
-       /* String email = userRequest.getEmail();
+        String email = userRequest.getEmail();
         String password = userRequest.getPassword();
 
-        User user = userService.getUserByEmail(email);
-        System.out.println("EMAIL ========="+user.getEmail());
-        System.out.println("PASSWORD ========="+user.getPassword());
+        Optional<User> user = userService.getUserByEmail(email);
 
-        if(user != null && user.getPassword().equals(password)){ // Verificamos si el usuario existe y si la contraseña es correcta
-            return ResponseEntity.ok(user);
-        }*/
+
+
+        if(user.isPresent() && user.get().getPassword().equals(password)){ // Verificamos si el usuario existe y si la contraseña es correcta
+
+            System.out.println("EMAIL ========="+user.get().getEmail());
+            System.out.println("PASSWORD ========="+user.get().getPassword());
+
+            return ResponseEntity.ok(user.get());
+        }
 
         return ResponseEntity.notFound().build();
     }
