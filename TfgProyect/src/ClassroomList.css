@@ -1,0 +1,26 @@
+/* Estilos CSS para ClassroomList */
+.classroomList-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* 100% del alto de la ventana */
+}
+
+/* Estilos CSS para las filas */
+.classroomList-row {
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+/* Estilos CSS para las columnas */
+.classroomList-col {
+    flex: 0 0 calc(33.3333% - 20px); /* Calcula el ancho de cada columna y resta 20px para el margen */
+    margin: 10px; /* Añade margen entre las columnas */
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}

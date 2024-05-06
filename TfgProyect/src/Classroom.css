@@ -1,0 +1,20 @@
+.classroom-container {
+    text-align: center; /* Centra horizontalmente el contenido */
+   
+}
+
+.classroom-list-container {
+    
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.classroom-subjects-list {
+
+    display: block;
+    flex-wrap: wrap; /* Envuelve los elementos si son demasiados para el ancho */
+    width: 100%;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilos adicionales para SubjectCard y otros elementos si es necesario */
+
