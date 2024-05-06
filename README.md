@@ -18,3 +18,19 @@ Rediseñé las tablas y he hecho otro boceto a papel del diagrama entidad relaci
 
 ![20240421_230052](https://github.com/Rivaillet/estudioTFG/assets/104085995/59e99dc6-a26c-4a8b-835e-afda16f2d8a1)
 
+Finalmente me quedó un diccionario de datos así
+
+
+
+![diccionarioAulaVirtual](https://github.com/Rivaillet/estudioTFG/assets/104085995/de4b3d8b-cc50-4bfe-b710-d9e000f6dec2)
+
+
+Los prefijos trans_ , m_ y rel_ significan transicional , maestra y relacional. Método de trabajo que nos enseñaron en las prácticas.
+
+Para subir y bajar archivos habíamos pensado en insertarlos de forma manual en BLOB en mysql pero hemos visto que aunque puede funcionar ,
+haría la base de datos muy pesada y lenta a corto plazo. Por lo que hemos valorado implementar un Bucket S3 de AWS. Con este sistema podemos
+guardar todos nuestros archivos en un servicio de Amazon y obtener un link público accesible por el cual siempre apuntaremos a nuestros ficheros.
+De este modo separamos BASE DATOS //// BUCKET . Agilizamos mucho nuestra base aunque hay que tener cuidado con los servicios de amazon ya que 
+son todos de pago, siempre y cuando no te pases de cierto peso de transferencia.
+
+
