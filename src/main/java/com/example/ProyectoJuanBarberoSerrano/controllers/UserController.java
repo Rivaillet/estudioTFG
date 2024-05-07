@@ -12,7 +12,13 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
+
+
+
 @CrossOrigin("*")
+
+
+
 @RequestMapping("api/users")
 
 public class UserController {
