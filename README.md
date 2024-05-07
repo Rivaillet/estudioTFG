@@ -33,7 +33,7 @@ guardar todos nuestros archivos en un servicio de Amazon y obtener un link públ
 De este modo separamos BASE DATOS //// BUCKET . Agilizamos mucho nuestra base aunque hay que tener cuidado con los servicios de amazon ya que 
 son todos de pago, siempre y cuando no te pases de cierto peso de transferencia.
 
-Esque conceptual final de la aplicación
+Esquema conceptual final de la aplicación
 
 
 ![esquemaConceptual drawio](https://github.com/Rivaillet/estudioTFG/assets/104085995/843d248f-a569-4349-b9b7-1194ce84c3cd)
