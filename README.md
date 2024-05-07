@@ -38,4 +38,11 @@ Esque conceptual final de la aplicación
 
 ![esquemaConceptual drawio](https://github.com/Rivaillet/estudioTFG/assets/104085995/843d248f-a569-4349-b9b7-1194ce84c3cd)
 
+Usamos Vite como herramienta de desarrollo de aplicaciones FrontEnd que usa React. 
+El Front realiza peticiones a una APIREST basada en springboot .
+La Api realiza consultas a la base de datos MYSQL .
+Por otro lado tenemos un Bucket de AWS para guardar archivos grandes , de estos archivos pasaremos su link 
+como dato a una table de mysql para guardar la referencia. De manera que cuando vuelva al front se apunte al 
+bucket , es decir , a la imagen.
+
 
