@@ -45,4 +45,8 @@ Por otro lado tenemos un Bucket de AWS para guardar archivos grandes , de estos 
 como dato a una table de mysql para guardar la referencia. De manera que cuando vuelva al front se apunte al 
 bucket , es decir , a la imagen.
 
+------------------------------------------------------------------------------------------------------------------------
 
+[DiagramaVistas.drawio.pdf](https://github.com/Rivaillet/estudioTFG/files/15309152/DiagramaVistas.drawio.pdf)
+
+Hemos diseñado un diagrama de vistas para poder visualizar la forma final de nuestra aplicación.
